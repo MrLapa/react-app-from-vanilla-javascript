@@ -37,7 +37,7 @@ export default defineConfig({
 Now that you have installed the necessary dependencies, let's set up the React application.
 
 Configure the JavaScript Entry Point
-In your existing main.js file, add the following code to set up the React app:
+In your existing `main.js` file, add the following code to set up the React app:
 
 ```shell
 import React from "react";
@@ -47,7 +47,7 @@ createRoot(document.getElementById("root")).render(<h1>Hello World!</h1>);
 ```
 
 ### Step 4: Update the index.html File
-In your index.html file, make sure it contains the following lines to load your React application:
+In your `index.html` file, make sure it contains the following lines to load your React application:
 
 ```shell
 <div id="root"></div>
@@ -55,7 +55,7 @@ In your index.html file, make sure it contains the following lines to load your 
 ```
 
 ### Step 5: Rename the Entry File
-Rename the main.js file to main.jsx to indicate that it contains JSX code.
+Rename the `main.js` file to `main.jsx` to indicate that it contains JSX code.
 
 ### Start React app
 You are now ready to start your React application using Vite. Run the following command:
