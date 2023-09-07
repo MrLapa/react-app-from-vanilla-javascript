@@ -1,6 +1,8 @@
 # react-app-from-vanilla-javascript
 This repository demonstrates how to transform a Vanilla JavaScript application into a React application and sets up the application's entry point.
 
+**Note:** This project initially uses the [Vite](https://vitejs.dev/) web framework to create the Vanilla JavaScript project.
+
 ## Installation Instructions
 
 Follow these steps to set up your React environment:
@@ -13,13 +15,23 @@ Run the following command to install React and React DOM:
 npm install react react-dom
 ```
 
-### Step 2: Install the Vite Plugin for React
+### Step 2: Install and set up the Vite Plugin for React
 Install the Vite plugin for React using the following command:
 
 ```shell
 npm i @vitejs/plugin-react
 ```
 
+After installing the Vite plugin, set up the `vite.config.js` file with the following code:
+
+```shell
+import { defineConfig } from "vite";
+import react from "@vitejs/plugin-react";
+
+export default defineConfig({
+  plugins: [react()],
+});
+```
 
 ### Step 3: Setting up the React Application
 Now that you have installed the necessary dependencies, let's set up the React application.
